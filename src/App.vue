@@ -10,7 +10,7 @@
             <span><strong>{{ book.title }}</strong> by <strong>{{ book.author }}</strong> </span>
           </div>
           <div class="read-status" :style="{ color: book.isRead ? 'green' : 'red' }">
-            {{ book.isRead ? 'gelesen' : 'noch nicht gelesen' }}
+            {{ book.isRead ? 'read' : 'not read yet' }}
             <button @click="book.isRead = !book.isRead">Mark as (Un)read</button>
             <button @click="removeBook(book)" class="fa-regular fa-trash-can fa-2xl iButton"></button>
           </div>
